@@ -32,6 +32,7 @@
 \usepackage{multirow}
 \usepackage{comment}
 \usepackage[hidelinks]{hyperref}
+\usepackage{placeins}
 %=================================================
 
 \title{Processamento de Imagens}
@@ -301,4 +302,53 @@ A figura \ref{fig:exemplo} mostra a distribuição de cones e bastonetes na reti
 
     Como visto na seção anterior a imagem da retina é focada primariamente na fóvea, que é responsável
     por fornecer a visão central, e é composta apenas por cones.
+
+    \subsubsection{Adaptação ao brilho e discriminação de cores}
+    Devido as imagens digitais serem exibidas em tons discretos de valores, a habilidade de discriminar
+    cores é uma tarefa a ser considerada para os olhos humanos. A distribuição de níveis de intensidade
+    da luz que um sistema visual humano pode adaptar é vasta, a ordem chega a ser algo em torno de
+    $10^{10}$ do limiar escotópico ao limite de ofuscamento. Existem algumas evidências de que a subjetividade
+    do brilho é uma função logarítmica da intensidade da luz.
+%reduza o tamanho da figura usando height
+    \begin{figure}[h]
+        \centering
+        \includegraphics[width=10cm,height=10cm]{images/8.png}
+        \caption{Curva de adaptação ao brilho}
+        \label{fig:exemplo}
+    \end{figure}
+    A figura \ref{fig:exemplo} mostra a curva de adaptação ao brilho, que é uma curva logarítmica. A
+    solida e longa curva representa a capacidade de adaptação do sistema. Uma visão fotópica é
+    capaz de discriminar uma faixa de cerca de $10^{6}$. A transição escotópica-fotópica ocorre em
+    torno de $0.001$ a $0.1$ Millilamberts.
+
+    Para qualquer conjunto de condições de iluminação, o atual nível de sensibilidade a luz do sistema
+    visual é chamado de adaptação ao brilho. Olhando para a figura \ref{fig:exemplo}, é possível ver
+    que, por exemplo, o brilho $B_{a}$ representa uma curva de intersecção curta e representa
+    a faixa de brilho subjetivo que o olho pode perceber quando está adaptado a este nível.
+    Um fato sobre este intervalo é que ele é extremamente estreito, fechado, ter um nível $B_{B}$ no qual e abaixo do qual todos os estímulos são percebidos como indistintos
+negros capazes. A parte superior da curva não é realmente restrita, mas, se for extendido ou
+levado longe demais, perde seu significado porque intensidades muito mais altas simplesmente
+elevar o nível de adaptação acima de $B_{a}$
+
+    \begin{figure}[h]
+        \centering
+        \includegraphics[width=10cm,height=10cm]{images/9.png}
+        \caption{Experimento básico para caracterizar discriminação do brilho}
+        \label{fig:Variação do I}
+    \end{figure}
+
+    Um outro fato interessante está relacionado com a proporção de Weber. Essa proporção vem da ideia
+    da habilidade do olho humano em conseguir discriminar certas mudanças entre as alterações
+    da intensidade da luz a um certo nível de adaptação considerada interessante.
+    Considere um experimento usado para determinar a capacidade do sistema humano visual para discriminar
+    o brilho. O experimento consiste em ter um olhar subjetivo a um plano uniformimente iluminado em uma área
+    larga o suficiente para ocupar um campo de visão por inteiro. Essa área normalmente é difusa, como um vidro opaco, que
+    é iluminada por uma fonte de luz com intensidade $I$, e pode ser variada. Nesse campo é adicionado um incremento a iluminação
+    $\varDelta I$ em uma curta duração, ou seja um flash aparece em um circulo no centro uniforme iluminando o campo, conforme
+    pode ser visualizado na figura \ref{fig:Variação do I}.
+    Se o $\varDelta I$ não tiver brilho o suficiente o responsável pelo experimento irá dizer não, indicando uma mudança pouco
+    perceptivel. A medida que $\varDelta I$ fica mais forte, o observador pode dar uma resposta positiva indicando uma mudança perspectiva na luminosidade. Até
+    chegar no ponto de que a resposta é sempre sim. A quantidade de $\varDelta I_{c}/I$ onde $\varDelta I_{c}$ é o incremento da iluminação discriminavel em $50\%$ de todo o tempo
+    de iluminação no fundo $I$ é o que chamamos de Proporção de Weber. Um pequeno valor de $\varDelta I_{c}/I$ indica uma grande porcentagem de mudança na intensidade requisitada.
+    Isso representa uma discriminação pobre.
 \end{document}
