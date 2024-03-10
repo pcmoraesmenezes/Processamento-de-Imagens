@@ -62,7 +62,8 @@ carreira profissional.
 
 Algumas das informações presentes nesse documento foram extraídas do contéudo fornecido pelo professor Luiz Eduardo da Universidade Federal de
 Alfenas.Quero agradecer a ele por compartilhar seu conhecimento na área.Além disso, algumas outras informações serão extraídas de fontes
-externas, que serão devidamente referenciadas.
+externas, que serão devidamente referenciadas. Além disso, os textos são nota de base do livro "Digital Image Processing" de Rafael C. Gonzalez e Richard E. Woods.
+
 
 \section{Introdução}
 
@@ -351,4 +352,52 @@ elevar o nível de adaptação acima de $B_{a}$
     chegar no ponto de que a resposta é sempre sim. A quantidade de $\varDelta I_{c}/I$ onde $\varDelta I_{c}$ é o incremento da iluminação discriminavel em $50\%$ de todo o tempo
     de iluminação no fundo $I$ é o que chamamos de Proporção de Weber. Um pequeno valor de $\varDelta I_{c}/I$ indica uma grande porcentagem de mudança na intensidade requisitada.
     Isso representa uma discriminação pobre.
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=10cm,height=10cm]{images/10.png}
+        \caption{Curva de discriminação do brilho}
+        \label{fig:Curv}
+    \end{figure}
+
+    Uma plotagem do log de $\varDelta I_{c}/I$ como uma função logaritmica de $I$ tem um formato que pode ser visualizado na
+    figura \ref{fig:Curv}
+
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=8cm,height=8cm]{images/11.png}
+        \caption{Ilustração do efeito Mach e ilustração da função de intensidade}
+        \label{fig:mach}
+    \end{figure}
+
+    Efeito Mach: O efeito Mach é uma ilusão visual em que linhas paralelas parecem convergir em um ponto quando observadas
+    em uma imagem bidimensional. No processamento digital de imagens, isso pode causar distorções perceptuais se não for considerado,
+    exigindo técnicas específicas para corrigir ou mitigar o efeito, como correção de distorção ou uso de algoritmos de interpolação.
+
+    Além disso o fenômeno abordado na figura \ref{fig:Curv} ilustra que o brilho recebido não é unicamente uma função de intensidade. Isso pode
+    ser nitidamente visto na figura \ref{fig:mach}
+
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=10cm,height=10cm]{images/12.png}
+        \caption{Exemplificação do efeito de contraste simultâneo}
+        \label{fig:Contraste}
+    \end{figure}
+
+    Um outro fenômeno é o chamado de contraste simultaneo, isto esta associado ao fato de que uma região de cor cinza parece mais clara
+    quando colocada em um fundo escuro, e mais escura quando colocada em um fundo claro. Isso é um fenômeno que ocorre devido a interação
+    entre a região e o fundo. Esse fenômeno é ilustrado na figura \ref{fig:Contraste}
+
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=10cm,height=10cm]{images/13.png}
+        \caption{Exemplo de ilusões de óptica}
+        \label{fig:ilusao}
+    \end{figure}
+    Outro exemplo até um tanto quanto divertido está associado aos fenômenos de ilusões de óptica.
+    Essas ilusões são fenômenos que ocorrem quando o cérebro interpreta a informação visual de uma forma
+    que não corresponde à realidade. Isso ocorre devido a uma série de fatores, como por exemplo, a
+    forma como a luz incide sobre um objeto, a forma como a luz é refletida, entre outros.
+    Alguns exemplos podem ser vistos na \ref{fig:ilusao}, onde pode ser visto no rosto do senhor
+    um homem com uma especie de violão na mão, enquanto que no rosto da mulher pode ser visto uma mulher
+    segurando uma especie de chapéu. Existem diversos tipos de ilusões de óptica.
 \end{document}
