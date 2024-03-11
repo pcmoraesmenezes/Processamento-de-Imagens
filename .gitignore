@@ -2,3 +2,4 @@ auxil
 out/Teoria.synctex.gz
 .idea
 .venv
+__pycache__
