@@ -33,6 +33,7 @@
 \usepackage{comment}
 \usepackage[hidelinks]{hyperref}
 \usepackage{placeins}
+\usepackage{changepage}
 %=================================================
 
 \title{Processamento de Imagens}
@@ -400,4 +401,59 @@ elevar o nível de adaptação acima de $B_{a}$
     Alguns exemplos podem ser vistos na \ref{fig:ilusao}, onde pode ser visto no rosto do senhor
     um homem com uma especie de violão na mão, enquanto que no rosto da mulher pode ser visto uma mulher
     segurando uma especie de chapéu. Existem diversos tipos de ilusões de óptica.
+
+    \subsection{Luz e o Espectro do campo Eletromagnetico}
+
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=15cm,height=15cm]{images/14.png}
+        \caption{Espectro do campo eletromagnético}
+        \label{fig:espectro}
+    \end{figure}
+
+    Conforme pode ser evidenciado na figura \ref{fig:espectro}, o espectro visível é apenas uma pequena
+    parte do espectro eletromagnético. O campo do espectro eletromagnético pode ser representado por
+    comprimentos de onda, frequencia ou energia. Comprimento de onda é representado por $\lambda$ e
+    a frequência pode ser representada por $v$. A equação que relaciona comprimento de onda e frequência
+    é dada por:
+    \begin{equation}
+        \lambda = \frac{c}{v}
+    \end{equation}
+    Onde $c$ é a velocidade da luz no vácuo, que é aproximadamente $3.0 \times 10^{8} m/s$. A energia
+    de um fóton é dada por:
+    \begin{equation}
+        E = hv
+        \label{eq:energia}
+    \end{equation}
+    Onde $h$ é a constante de Planck, que é aproximadamente $6.626 \times 10^{-34} J.s$. A energia de
+    um fóton é diretamente proporcional a frequência, e inversamente proporcional ao comprimento de onda.
+
+    A frequência é abordada em Hertz(Hz), e é uma medida de ciclos por segundo. A frequência é uma
+    medida de quão rápido um fóton oscila.
+
+    Ondas eletromagnéticas podem ser vistas como propagação sinusoidal de campos elétricos e magnéticos
+que são perpendiculares entre si e perpendiculares a direção de propagação da onda.
+
+    \begin{figure}[h]
+    \begin{adjustwidth}{-5cm}{}
+        \centering
+        \includegraphics[]{images/15.png}
+        \caption{Exemplo de onda sinusoidal}
+        \label{fig:onda}
+    \end{adjustwidth}
+\end{figure}
+
+    Cada pacote de energia é chamado de fóton. É visto na equação \ref{eq:energia} que a energia de um
+    fóton é diretamente proporcional a frequência, e inversamente proporcional ao comprimento de onda.
+
+    Com essas informações em mente tem-se um fato: Por que ondas de raio gamma são mais perigosas que
+    ondas de rádio? A resposta está na equação \ref{eq:energia}, que mostra que a energia de um fóton
+    é diretamente proporcional a frequência, e inversamente proporcional ao comprimento de onda. Com
+    isso, ondas de raio gamma possuem mais energia que ondas de rádio, e com isso são mais perigosas.
+
+    A faixa de cores pode ser vista na imagem \ref{fig:espectro}, e é uma faixa que vai de aproximadamente
+    $400nm$ até $700nm$. A luz branca é composta por todas as cores, e a cor branca é a cor que é
+    percebida quando todas as cores são misturadas. As cores que são enxergadas são as cores que são
+    refletidas pelos objetos.
+
 \end{document}
